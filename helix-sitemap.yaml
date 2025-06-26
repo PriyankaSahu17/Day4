@@ -1,0 +1,14 @@
+version: 1
+
+sitemaps:
+  default:
+    include:
+      - '/**'           # Include all pages
+    exclude:
+      - '/drafts/**'    # Exclude drafts
+      - '/shared/**'    # Exclude shared/private pages
+    properties:
+      lastmod:
+        select: none
+        value: |
+          parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
