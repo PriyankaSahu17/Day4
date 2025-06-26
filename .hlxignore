@@ -3,5 +3,6 @@
 karma.config.js
 LICENSE
 package.json
+data.json
 package-lock.json
 test/*
